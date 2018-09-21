@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-20T15:32:47.452Z</updated>
+  <updated>2018-09-21T02:43:52.659Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,40 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>my-university-life</title>
-    <link href="http://yoursite.com/2018/09/20/my-university-life/"/>
-    <id>http://yoursite.com/2018/09/20/my-university-life/</id>
-    <published>2018-09-20T15:10:10.000Z</published>
-    <updated>2018-09-20T15:32:47.452Z</updated>
+    <title>hexo+github搭建博客最全配置</title>
+    <link href="http://yoursite.com/2018/09/21/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%85%A8%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/</id>
+    <published>2018-09-21T01:15:04.000Z</published>
+    <updated>2018-09-21T02:43:52.659Z</updated>
     
     <summary type="html">
     
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="university" scheme="http://yoursite.com/tags/university/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/09/20/hello-world/"/>
-    <id>http://yoursite.com/2018/09/20/hello-world/</id>
-    <published>2018-09-20T13:03:26.631Z</published>
-    <updated>2018-09-20T15:37:40.915Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+      博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。
     
     </summary>
     
-      <category term="手记" scheme="http://yoursite.com/categories/%E6%89%8B%E8%AE%B0/"/>
+      <category term="博客" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="入门介绍" scheme="http://yoursite.com/tags/%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
   </entry>
   
