@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-21T02:43:52.659Z</updated>
+  <updated>2018-12-07T15:14:07.771Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git常用指令详细说明</title>
+    <link href="http://yoursite.com/2018/12/07/Git%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E/"/>
+    <id>http://yoursite.com/2018/12/07/Git常用指令详细说明/</id>
+    <published>2018-12-07T14:41:58.000Z</published>
+    <updated>2018-12-07T15:14:07.771Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博主博客地址: &lt;a href=&quot;http://blog.suhuashan.xin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://blog.suhuashan.xin&lt;/a&gt;&lt;br&gt;本文主要讲解git一些常用且实用的操作，方便进行github托管代码。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="git常用操作" scheme="http://yoursite.com/categories/git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    
+    
+      <category term="git指令" scheme="http://yoursite.com/tags/git%E6%8C%87%E4%BB%A4/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo+github搭建博客最全配置</title>
     <link href="http://yoursite.com/2018/09/21/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%85%A8%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/</id>
     <published>2018-09-21T01:15:04.000Z</published>
-    <updated>2018-09-21T02:43:52.659Z</updated>
+    <updated>2018-12-07T15:14:15.523Z</updated>
     
     <summary type="html">
     
@@ -29,12 +51,12 @@
     
     </summary>
     
-      <category term="博客" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客搭建教程" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
       <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
