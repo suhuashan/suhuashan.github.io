@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Mount华">
 <meta property="og:description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-07T15:51:37.621Z">
+<meta property="og:updated_time" content="2018-12-07T15:55:32.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建博客最全配置">
 <meta name="twitter:description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2k
+                  2.1k
                 </span>
               
 
@@ -403,7 +403,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -479,6 +479,7 @@
 <p>注意：CNAME文件在下次 hexo deploy的时候就消失了，需要重新创建，这样就很繁琐</p>
 <p>方法一：每次 hexo d 之后，就去 GitHub 仓库根目录新建 CNAME文件</p>
 <p>方法二：在 hexo g 之后， hexo d 之前，把CNAME文件复制到 “\public\” 目录下面，里面写入你要绑定的域名。</p>
+<p>方法三（推荐）：将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等，这样在 hexo d 之后就不会被删除了。</p>
 <h2 id="二-Hexo的Next主题详细配置"><a href="#二-Hexo的Next主题详细配置" class="headerlink" title="二.Hexo的Next主题详细配置"></a>二.Hexo的Next主题详细配置</h2><p>这一块我就不多说了，毕竟网上已经有很完美的教程。但是我会提出教程几个讲的比较模糊的地方，然后对不清晰的地方重新配置。</p>
 <p>Next 官方文档：<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a><br>教程参考(我对网上大部分进行筛选，个人觉得以下这两个比较管用)：<br><a href="https://www.jianshu.com/p/3a05351a37dc" target="_blank" rel="noopener">https://www.jianshu.com/p/3a05351a37dc</a><br><a href="https://zhuanlan.zhihu.com/p/28128674" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/28128674</a></p>
 <p>教程里面需要修改的地方：</p>
