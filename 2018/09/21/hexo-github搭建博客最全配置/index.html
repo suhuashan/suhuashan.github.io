@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Mount华">
 <meta property="og:description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-07T15:14:15.523Z">
+<meta property="og:updated_time" content="2018-12-07T15:51:37.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo+github搭建博客最全配置">
 <meta name="twitter:description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  2k
                 </span>
               
 
@@ -403,7 +403,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  7
                 </span>
               
             </div>
@@ -466,6 +466,19 @@
 <p>本地文件提交到 GitHub Pages<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 删除旧的 public 文件</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">// 生成新的 public 文件</span><br><span class="line">hexo generate</span><br><span class="line">或者</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">// 开始部署</span><br><span class="line">hexo deploye</span><br><span class="line">或者</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 <p>在浏览器中输入 <a href="https://yourname(github的用户名).github.io，你会发现和在本地看到一模一样。" target="_blank" rel="noopener">https://yourname(github的用户名).github.io，你会发现和在本地看到一模一样。</a></p>
 <p>这样，本地 git 项目与远程的 github 建立联系。</p>
+<h3 id="6-发表新文章"><a href="#6-发表新文章" class="headerlink" title="6.发表新文章"></a>6.发表新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span>        //在本地文件夹根目录下输入该命令</span><br></pre></td></tr></table></figure>
+<p>在本地博客文件夹 source_posts 文件夹下看到我们新建的 markdown 文件。</p>
+<p>当然，我们也可以手动添加Markdown文件在source/post文件夹下，其效果同样可以媲美hexo new指令</p>
+<p>文章编辑好之后，运行生成、部署命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>参考链接：<a href="https://oakland.github.io/2016/05/02/hexo-%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84post/" target="_blank" rel="noopener">https://oakland.github.io/2016/05/02/hexo-%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84post/</a></p>
+<h3 id="7-GitHub-Pages-地址解析到个人域名"><a href="#7-GitHub-Pages-地址解析到个人域名" class="headerlink" title="7.GitHub Pages 地址解析到个人域名"></a>7.GitHub Pages 地址解析到个人域名</h3><p>在 GitHub 仓库的根目录下建立一个 CNAME 的文本文件(注意：没有扩展名)，文件里面只能输入一个你的域名，不能加http://<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blog.suhuashan.xin</span><br></pre></td></tr></table></figure></p>
+<p>注意：CNAME 一定是在你 Github 项目的 master 根目录下</p>
+<p>进入<a href="https://wanwang.aliyun.com/domain" target="_blank" rel="noopener">阿里云域名解析地址</a>，添加解析：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">记录类型选择CNAME</span><br><span class="line">主机记录填blog            //当然填写www也可以，自拟一个吧</span><br><span class="line">解析线路选择默认</span><br><span class="line">记录值填yourname.github.io</span><br><span class="line">TTL值为10分钟</span><br><span class="line">再添加一个解析，记录类型A</span><br><span class="line">主机记录填www</span><br><span class="line">解析线路选择默认</span><br><span class="line">记录值填你GitHub 的ip地址（在cmd中ping：）</span><br><span class="line">ping suhuashan.github.io</span><br></pre></td></tr></table></figure></p>
+<p>保存，等待一下访问suhuashan.github.io，域名会重定向为blog.suhuashan.xin</p>
+<p>注意：CNAME文件在下次 hexo deploy的时候就消失了，需要重新创建，这样就很繁琐</p>
+<p>方法一：每次 hexo d 之后，就去 GitHub 仓库根目录新建 CNAME文件</p>
+<p>方法二：在 hexo g 之后， hexo d 之前，把CNAME文件复制到 “\public\” 目录下面，里面写入你要绑定的域名。</p>
 <h2 id="二-Hexo的Next主题详细配置"><a href="#二-Hexo的Next主题详细配置" class="headerlink" title="二.Hexo的Next主题详细配置"></a>二.Hexo的Next主题详细配置</h2><p>这一块我就不多说了，毕竟网上已经有很完美的教程。但是我会提出教程几个讲的比较模糊的地方，然后对不清晰的地方重新配置。</p>
 <p>Next 官方文档：<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a><br>教程参考(我对网上大部分进行筛选，个人觉得以下这两个比较管用)：<br><a href="https://www.jianshu.com/p/3a05351a37dc" target="_blank" rel="noopener">https://www.jianshu.com/p/3a05351a37dc</a><br><a href="https://zhuanlan.zhihu.com/p/28128674" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/28128674</a></p>
 <p>教程里面需要修改的地方：</p>
@@ -687,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-博客搭建"><span class="nav-text">一.博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-搭建-Node-js-环境"><span class="nav-text">1.搭建 Node.js 环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-搭建-Git-环境"><span class="nav-text">2.搭建 Git 环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-GitHub-注册和配置"><span class="nav-text">3.GitHub 注册和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-安装配置-Hexo"><span class="nav-text">4.安装配置 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-关联-Hexo-与-GitHub-Pages"><span class="nav-text">5.关联 Hexo 与 GitHub Pages</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-Hexo的Next主题详细配置"><span class="nav-text">二.Hexo的Next主题详细配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-添加分类模块"><span class="nav-text">1.添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-添加标签模块"><span class="nav-text">2.添加标签模块</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-博客搭建"><span class="nav-text">一.博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-搭建-Node-js-环境"><span class="nav-text">1.搭建 Node.js 环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-搭建-Git-环境"><span class="nav-text">2.搭建 Git 环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-GitHub-注册和配置"><span class="nav-text">3.GitHub 注册和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-安装配置-Hexo"><span class="nav-text">4.安装配置 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-关联-Hexo-与-GitHub-Pages"><span class="nav-text">5.关联 Hexo 与 GitHub Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-发表新文章"><span class="nav-text">6.发表新文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-GitHub-Pages-地址解析到个人域名"><span class="nav-text">7.GitHub Pages 地址解析到个人域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-Hexo的Next主题详细配置"><span class="nav-text">二.Hexo的Next主题详细配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-添加分类模块"><span class="nav-text">1.添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-添加标签模块"><span class="nav-text">2.添加标签模块</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -743,7 +756,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.5k字</span>
+  <span class="post-count">博客全站共3k字</span>
 </div>
         
 
