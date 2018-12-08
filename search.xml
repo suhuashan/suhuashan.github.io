@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vue项目下，用命令直接修复ESLint报错]]></title>
+    <url>%2F2018%2F12%2F08%2Fvue%E9%A1%B9%E7%9B%AE%E4%B8%8B%EF%BC%8C%E7%94%A8%E5%91%BD%E4%BB%A4%E7%9B%B4%E6%8E%A5%E4%BF%AE%E5%A4%8DESLint%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[博主博客地址: http://blog.suhuashan.xin本篇文章可适用于vue项目的eslint解决方案。 在写mpvue（小程序框架，其实也算是vue项目）项目过程引入ESLint代码规范，出现很多规范问题。 首先在项目的根目录下找到package.json文件，找到下面的位置，也就是“lint”这一条指令，指令后面具体内容不用深究。 然后修改成： 接下来，运行npm run lint 可以自动解决绝大多数错误，应该有可能包含一些错误只能手动解决的。 例如，我运行后，还剩下一个错误： 这个就只能根据错误文件定位去做相应的修改了，把==改成===。 当然，如果你坚决不改呢，那就在包含错误的那个文件头部加上1/*eslint-disable*/ 原理就是eslint不对该文件进行检查。 最后，个人对eslint代码规范的建议： 先把eslint关掉，最后项目开发完成再进行规范代码。 先找到根目录下的build文件夹的webpack.base.conf.js 找到这个位置，把代码注释掉 最后，项目开发完成后，再去掉注释，并按照前面的解决方法进行规范代码。]]></content>
+      <categories>
+        <category>ESlint</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>eslint</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ajax跨域请求以及传递cookie]]></title>
     <url>%2F2018%2F12%2F08%2Fajax%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E4%BB%A5%E5%8F%8A%E4%BC%A0%E9%80%92cookie%2F</url>
     <content type="text"><![CDATA[博主博客地址: http://blog.suhuashan.xin本文分为四大模块，第一模块是对跨域的介绍，第二模块是跨域解决方案，第三模块是ajax跨域传递cookie，第四模块是vue配置跨域。 一.跨域访问什么是跨域？ 这是因为浏览器的同源策略会导致跨域，只要协议，域名，端口有任何一个不同，都被当作是不同的域，之间的请求便为跨域操作。跨域访问一般是被阻止的，因为在安全上有个规则：同源策略要求客户端和服务端都必须在一个域内才能通信。比如网站A为a.test.com，网站B为b.test.com。按照上面所说，这两个网站属于不同域。所谓同源也就是网站A和网站B必须是相同的域名。 二.跨域解决方案1.jsonp实现跨域基于JSONP的实现原理,所以JSONP只能是GET请求,不能进行较为复杂的POST和其它请求,所以遇到那种情况,就得参考下面的CORS解决跨域了(所以如今它也基本被淘汰了) (1)type改成了get，JSONP只支持get请求，这个参数在JSONP场景下其实是可以忽略的，即使改成post，也会依然按get模式； (2)dataType改成了jsonp，这个参数标明要采用JSONP方式进行调用； (3)jsonp: “x5callback”，这个参数其实是一个约定的参数名，用于后端按照这个参数名获取一个回调函数名； (4)jsonpCallback：这个参数用来指定上面那个参数对应的回调函数名，如果不指定，jQuery会自动生成一个随机的函数名。 2.CORS（Cross-Origin Resource Sharing）方案这个方案是比较简单的，只需要在服务端返回的头部信息中增加：（下面分别给出PHP和node服务端的配置） 12345PHP//指定允许所有域名访问header('Access-Control-Allow-Origin:*');//指定允许指定域名访问header('Access-Control-Allow-Origin:http://www.xxx.com'); 12345678910Node//在相应添加这两条配置res.header('Access-Control-Allow-Origin', '*');app.all('*', function (req, res, next) &#123; res.header('Access-Control-Allow-Headers', 'Content-Type'); res.header('Access-Control-Allow-Methods', 'POST,GET'); res.header('Content-Type', 'application/json;charset=utf-8'); next();&#125;); 3.代理请求方式这里我也不是很熟悉，有兴趣的朋友上网自学。 三.ajax跨域传递cookie1.（客户端）前端ajax请求设置如下：1234567891011 $.ajax(&#123; url:_url, type:"post", data:"", dataType:"json", //实现跨域请求cookie xhrFields: &#123; withCredentials: true &#125;, crossDomain: true,&#125; 2.（服务端）后端设置如下： (PHP和Node为例）123456789101112PHP例子 //允许跨域传递cookieheader('Access-Control-Allow-Credentials:true');//这里需要注意必须设置为指定访问的域名header('Access-Control-Allow-Origin:http://www.xxx.com');//如果设置为所有域名都可访问，则会报错header('Access-Control-Allow-Origin:*');//最终配置header('Access-Control-Allow-Origin:http://www.xxx.com');header('Access-Control-Allow-Credentials:true'); 12345678910111213141516171819Node例子//允许跨域传递cookieres.header('Access-Control-Allow-Credentials', true);//这里需要注意必须设置为指定访问的域名res.header('Access-Control-Allow-Origin', 'http://www.xxx.com');//如果设置为所有域名都可访问，则会报错 res.header('Access-Control-Allow-Origin', '*');//最终配置app.all('*', function (req, res, next) &#123; res.header('Access-Control-Allow-Origin', 'http://www.xxx.com'); //Access-Control-Allow-Headers ,可根据浏览器的F12查看,把对应的粘贴在这里就行 res.header('Access-Control-Allow-Headers', 'Content-Type'); res.header('Access-Control-Allow-Methods', 'POST,GET'); res.header('Access-Control-Allow-Credentials', true); res.header('Content-Type', 'application/json;charset=utf-8'); next();&#125;); 对应客户端的 xhrFields.withCredentials: true 参数，服务器端通过在响应 header 中设置 Access-Control-Allow-Credentials = true 来运行客户端携带证书式访问。通过对 Credentials 参数的设置，就可以保持跨域 Ajax 时的 Cookie。这里需要注意的是： 服务器端 Access-Control-Allow-Credentials = true时，参数Access-Control-Allow-Origin 的值不能为 * 。 这里顺便说一下cookie作用域问题。 domain表示的是cookie所在的域，默认为请求的地址如网址为www.jb51.net/test/test.aspx 那么domain默认为www.jb51.net。而跨域访问，如域A为t1.test.com，域B为t2.test.com，那么在域A生产一个令域A和域B都能访问的cookie就要将该cookie的domain设置为.test.com；如果要在域A生产一个令域A不能访问而域B能访问的cookie就要将该cookie的domain设置为t2.test.com。设置是放在ajax请求的位置，加上：123//这里t1.test.com能够访问t2.test.com，进行cookie传递。//t1.test.com不能访问t2.lin.comdocuemnt.cookie = 'domain=test.com'; 主机名是指同一个域下的不同主机，例如：www.google.com 和 gmail.google.com 就是两个不同的主机名。默认情况下，一个主机中创建的cookie在另一个主机下是不能被访问的，但可以通过domain参数来实现对其的控制，其语法格式为：1document.cookie="name=value; domain=cookieDomain"; 以google为例，要实现跨主机访问，可以写为：1document.cookie="name=value;domain=.google.com"; 这样，所有google.com下的主机都可以访问该cookie。 四.vue项目配置跨域在vue项目根目录下config/index.js1234567891011//找到dev配置项，直接添加dev: &#123; proxyTable: &#123; '/user': &#123; target: 'http://localhost:3000/', changeOrigin: true, pathRewrite: &#123; "^/user": '/user' &#125; &#125; &#125; 项目启动端口是8080,请求域名本来是：http://localhost:8080/user，会重定向为http://localhost:3000/userpathRewrite配置项的作用是，将一切/user/xxx等任何请求重定向，同时前端请求地址不用加上主机名，直接/user/xxx就可以。 本篇文章参考文章地址： 关于cookie: https://www.cnblogs.com/Jackie-sky/p/3672544.html cookie跨域：https://blog.csdn.net/qq_21956483/article/details/78720252]]></content>
@@ -45,7 +57,6 @@
         <category>博客搭建教程</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
       </tags>
   </entry>

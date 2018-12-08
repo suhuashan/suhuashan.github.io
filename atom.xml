@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-08T13:40:21.338Z</updated>
+  <updated>2018-12-08T14:11:40.675Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>vue项目下，用命令直接修复ESLint报错</title>
+    <link href="http://yoursite.com/2018/12/08/vue%E9%A1%B9%E7%9B%AE%E4%B8%8B%EF%BC%8C%E7%94%A8%E5%91%BD%E4%BB%A4%E7%9B%B4%E6%8E%A5%E4%BF%AE%E5%A4%8DESLint%E6%8A%A5%E9%94%99/"/>
+    <id>http://yoursite.com/2018/12/08/vue项目下，用命令直接修复ESLint报错/</id>
+    <published>2018-12-08T13:49:22.000Z</published>
+    <updated>2018-12-08T14:11:40.675Z</updated>
+    
+    <summary type="html">
+    
+      这篇文章是自己在用mpvue框架开发小程序的过程中遇到的问题，同时引申为vue项目，总结出一套完整的解决方案。
+    
+    </summary>
+    
+      <category term="ESlint" scheme="http://yoursite.com/categories/ESlint/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="eslint" scheme="http://yoursite.com/tags/eslint/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ajax跨域请求以及传递cookie</title>
     <link href="http://yoursite.com/2018/12/08/ajax%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E4%BB%A5%E5%8F%8A%E4%BC%A0%E9%80%92cookie/"/>
     <id>http://yoursite.com/2018/12/08/ajax跨域请求以及传递cookie/</id>
     <published>2018-12-08T12:31:21.000Z</published>
-    <updated>2018-12-08T13:40:21.338Z</updated>
+    <updated>2018-12-08T13:47:24.860Z</updated>
     
     <summary type="html">
     
@@ -89,7 +111,7 @@
     <link href="http://yoursite.com/2018/09/21/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%85%A8%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/</id>
     <published>2018-09-21T01:15:04.000Z</published>
-    <updated>2018-12-08T12:33:28.789Z</updated>
+    <updated>2018-12-08T14:11:58.484Z</updated>
     
     <summary type="html">
     
@@ -99,8 +121,6 @@
     
       <category term="博客搭建教程" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     
-    
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
