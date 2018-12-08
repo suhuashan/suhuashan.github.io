@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-07T15:51:38.926Z</updated>
+  <updated>2018-12-08T12:26:46.275Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>慕课网vuejs开发饿了么APP的知识总结</title>
+    <link href="http://yoursite.com/2018/12/08/%E6%85%95%E8%AF%BE%E7%BD%91vuejs%E5%BC%80%E5%8F%91%E9%A5%BF%E4%BA%86%E4%B9%88APP%E7%9A%84%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/12/08/慕课网vuejs开发饿了么APP的知识总结/</id>
+    <published>2018-12-08T12:03:21.000Z</published>
+    <updated>2018-12-08T12:26:46.275Z</updated>
+    
+    <summary type="html">
+    
+      这篇文章主要是关于慕课网vue.js开发饿了么APP里面涉及到的一些知识点进行总结与归纳，其中包括视频里面使用的vue1.0开发，我使用vue2.x进行修改，并且对部分代码抽离为独立的组件。
+    
+    </summary>
+    
+      <category term="Vue项目总结" scheme="http://yoursite.com/categories/Vue%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+    
+      <category term="慕课网" scheme="http://yoursite.com/tags/%E6%85%95%E8%AF%BE%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Git常用指令详细说明</title>
@@ -43,7 +65,7 @@
     <link href="http://yoursite.com/2018/09/21/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%85%A8%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/</id>
     <published>2018-09-21T01:15:04.000Z</published>
-    <updated>2018-12-07T15:55:32.245Z</updated>
+    <updated>2018-12-08T12:26:48.534Z</updated>
     
     <summary type="html">
     
