@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="模块化,CommonJS,AMD,CMD," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
-<meta name="keywords" content="hexo">
+<meta name="description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。 一、模块化开发为什么要模块化开发呢？其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。具体可以参考阮一峰老师的文章：module-loader 二、Comm">
+<meta name="keywords" content="模块化,CommonJS,AMD,CMD">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+github搭建博客最全配置">
-<meta property="og:url" content="http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/index.html">
+<meta property="og:title" content="前端模块化：CommonJS,AMD,CMD,ES6">
+<meta property="og:url" content="http://yoursite.com/2019/01/03/前端模块化：CommonJS-AMD-CMD-ES6/index.html">
 <meta property="og:site_name" content="Mount华">
-<meta property="og:description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
+<meta property="og:description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。 一、模块化开发为什么要模块化开发呢？其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。具体可以参考阮一峰老师的文章：module-loader 二、Comm">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-08T14:15:19.174Z">
+<meta property="og:updated_time" content="2019-01-03T15:17:19.491Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo+github搭建博客最全配置">
-<meta name="twitter:description" content="博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。">
+<meta name="twitter:title" content="前端模块化：CommonJS,AMD,CMD,ES6">
+<meta name="twitter:description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。 一、模块化开发为什么要模块化开发呢？其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。具体可以参考阮一峰老师的文章：module-loader 二、Comm">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/01/03/前端模块化：CommonJS-AMD-CMD-ES6/"/>
 
 
 
 
 
-  <title>hexo+github搭建博客最全配置 | Mount华</title>
+  <title>前端模块化：CommonJS,AMD,CMD,ES6 | Mount华</title>
   
 
 
@@ -299,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/21/hexo-github搭建博客最全配置/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/前端模块化：CommonJS-AMD-CMD-ES6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Su Huashan">
@@ -316,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo+github搭建博客最全配置</h1>
+          <h1 class="post-title" itemprop="name headline">前端模块化：CommonJS,AMD,CMD,ES6</h1>
         
 
         <div class="post-meta">
@@ -328,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-21T09:15:04+08:00">
-                2018-09-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-03T23:12:07+08:00">
+                2019-01-03
               </time>
             
 
@@ -351,8 +351,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/博客搭建教程/" itemprop="url" rel="index">
-                    <span itemprop="name">博客搭建教程</span>
+                  <a href="/categories/前端模块化/" itemprop="url" rel="index">
+                    <span itemprop="name">前端模块化</span>
                   </a>
                 </span>
 
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.1k
+                  2k
                 </span>
               
 
@@ -410,10 +410,6 @@
           
 
           
-              <div class="post-description">
-                  博主是第一次搭建博客，故搭建过程中经历许多坎坷。虽然网上有很多Hexo+Github Pages搭建博客的资源，但是都是不太齐全，或者有些地方没讲请。故这篇文章是对网上一些文章的总结和修改。
-              </div>
-          
 
         </div>
       </header>
@@ -428,70 +424,55 @@
       
 
       
-        <p>博主博客地址: <a href="https://blog.suhuashan.xin" target="_blank" rel="noopener">https://blog.suhuashan.xin</a><br>本文分为两大模块，第一模块是搭建博客，第二模块是博客主题进行配置，当然我选用的主题是Next。</p>
-<a id="more"></a>
-<h2 id="一-博客搭建"><a href="#一-博客搭建" class="headerlink" title="一.博客搭建"></a>一.博客搭建</h2><h3 id="1-搭建-Node-js-环境"><a href="#1-搭建-Node-js-环境" class="headerlink" title="1.搭建 Node.js 环境"></a>1.搭建 Node.js 环境</h3><p>为什么要搭建Node.js环境？ - 因为Hexo博客系统是基于Node.js编写的。</p>
-<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。</p>
-<p>在Node.js官网：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> 下载安装包，推荐下载官方推荐(Recommonded)的版本。</p>
-<p>保持默认设置即可，一路Next，安装很快就结束了。</p>
-<p>windows打开命令提示符，输入node -v、npm -v出现版本号则说明Node.js环境配置成功，第一步完成！！！</p>
-<h3 id="2-搭建-Git-环境"><a href="#2-搭建-Git-环境" class="headerlink" title="2.搭建 Git 环境"></a>2.搭建 Git 环境</h3><p>为什么要搭建 Git 环境？ - 因为需要把本地的网页和文章等提交到 GitHub 上。</p>
-<p>Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
-<p>在 Git 官网：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a> 下载安装包，对准自己电脑的操作系统下载一个就可以了</p>
-<p>桌面右键，打开 Git Bush Here，输入 git –version，出现版本号则说明 Git 环境配置成功，第二步完成！！！</p>
-<h3 id="3-GitHub-注册和配置"><a href="#3-GitHub-注册和配置" class="headerlink" title="3.GitHub 注册和配置"></a>3.GitHub 注册和配置</h3><p>GitHub 是一个代码托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
-<p>Github注册：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
-<p>注册或者登陆好之后就开始创建仓库。</p>
-<p>创建仓库：Repository name 使用自己的用户名。<br>注意：yourname 必须是你的用户名。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yourname/yourname.github.io</span><br></pre></td></tr></table></figure></p>
-<p>访问 yourname.github.io，如果可以正常访问，那么 Github 的配置已经结束了。</p>
-<p>到此搭建 Hexo 博客的相关环境配置已经完成，下面开始讲解 Hexo 的相关操作。</p>
-<h3 id="4-安装配置-Hexo"><a href="#4-安装配置-Hexo" class="headerlink" title="4.安装配置 Hexo"></a>4.安装配置 Hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架，使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<p>Hexo 官方文档：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
-<p>使用 npm 安装 Hexo：在命令行中输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
-<p>注意：博主在安装这个包出现管理员权限问题，无法成功安装。于是按 win + x 打开 Window PowerShell,重新安装就可以了，如果安装过程出现WARN，不用担心，因为不会影响正常使用。</p>
-<p>查看 Hexo 的版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure></p>
-<p>Hexo 安装成功后，在本地创建一个文件夹，文件夹名随意（我命名为blog)，然后鼠标右击该文件夹，按顺序执行下面的命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>新建完成后，指定文件夹的目录如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── .deploy         <span class="comment">#需要部署的文件</span></span><br><span class="line">├── node_modules    <span class="comment">#Hexo插件</span></span><br><span class="line">├── public          <span class="comment">#生成的静态网页文件</span></span><br><span class="line">├── scaffolds       <span class="comment">#模板</span></span><br><span class="line">├── <span class="built_in">source</span>          <span class="comment">#博客正文和其他源文件，404、favicon、CNAME 都应该放在这里</span></span><br><span class="line">| ├── _drafts       <span class="comment">#草稿</span></span><br><span class="line">| └── _posts        <span class="comment">#文章</span></span><br><span class="line">├── themes          <span class="comment">#主题</span></span><br><span class="line">├── _config.yml     <span class="comment">#全局配置文件</span></span><br><span class="line">└── package.json    <span class="comment">#npm 依赖等</span></span><br></pre></td></tr></table></figure></p>
-<p>运行本地 Hexo 服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">或者</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>您的网站会在 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 下启动。如果 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 能够正常访问，则说明 Hexo 本地博客已经搭建起来了，只是本地哦，别人看不到的。下面，我们要部署到Github。</p>
-<p>注意1：执行hexo server提示找不到该指令</p>
-<p>解决办法：在Hexo 3.0 后server被单独出来了，需要安装server，安装的命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install hexo-server</span><br><span class="line">或者</span><br><span class="line">npm install hexo -server --save</span><br></pre></td></tr></table></figure></p>
-<h3 id="5-关联-Hexo-与-GitHub-Pages"><a href="#5-关联-Hexo-与-GitHub-Pages" class="headerlink" title="5.关联 Hexo 与 GitHub Pages"></a>5.关联 Hexo 与 GitHub Pages</h3><p>在前面创建的文件夹里面鼠标右键，点击<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Git Base Here</span><br></pre></td></tr></table></figure></p>
-<p>将Hexo与Github page联系起来，设置Git的user name和email（如果是第一次的话）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git -config --global user.name <span class="string">"your github name"</span></span><br><span class="line">git -config --global user.email <span class="string">"your email"</span></span><br></pre></td></tr></table></figure></p>
-<p>接着输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"your email"</span></span><br></pre></td></tr></table></figure></p>
-<p>连续三个回车，生成密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator.ssh或者C:\Users\具体用户.ssh）。</p>
-<p>登录 Github，点击头像下的 settings，添加 ssh<br>点击 SSH and GPG keys<br>新建一个new ssh key，将id_rsa.pub文件里的内容复制上去</p>
-<p>配置 Deployment</p>
-<p>在文件夹的根目录找到_config.yml文件，打开该文件找到Deployment，然后按照如下修改，用户名改成你的信息(需要注意的是：冒号后面记得空一格！)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:yourname(github的用户名)/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>本地文件提交到 GitHub Pages<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 删除旧的 public 文件</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">// 生成新的 public 文件</span><br><span class="line">hexo generate</span><br><span class="line">或者</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">// 开始部署</span><br><span class="line">hexo deploye</span><br><span class="line">或者</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
-<p>在浏览器中输入 <a href="https://yourname(github的用户名).github.io，你会发现和在本地看到一模一样。" target="_blank" rel="noopener">https://yourname(github的用户名).github.io，你会发现和在本地看到一模一样。</a></p>
-<p>这样，本地 git 项目与远程的 github 建立联系。</p>
-<h3 id="6-发表新文章"><a href="#6-发表新文章" class="headerlink" title="6.发表新文章"></a>6.发表新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span>        //在本地文件夹根目录下输入该命令</span><br></pre></td></tr></table></figure>
-<p>在本地博客文件夹 source_posts 文件夹下看到我们新建的 markdown 文件。</p>
-<p>当然，我们也可以手动添加Markdown文件在source/post文件夹下，其效果同样可以媲美hexo new指令</p>
-<p>文章编辑好之后，运行生成、部署命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>参考链接：<a href="https://oakland.github.io/2016/05/02/hexo-%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84post/" target="_blank" rel="noopener">https://oakland.github.io/2016/05/02/hexo-%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84post/</a></p>
-<h3 id="7-GitHub-Pages-地址解析到个人域名"><a href="#7-GitHub-Pages-地址解析到个人域名" class="headerlink" title="7.GitHub Pages 地址解析到个人域名"></a>7.GitHub Pages 地址解析到个人域名</h3><p>在 GitHub 仓库的根目录下建立一个 CNAME 的文本文件(注意：没有扩展名)，文件里面只能输入一个你的域名，不能加http://<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blog.suhuashan.xin</span><br></pre></td></tr></table></figure></p>
-<p>注意：CNAME 一定是在你 Github 项目的 master 根目录下</p>
-<p>进入<a href="https://wanwang.aliyun.com/domain" target="_blank" rel="noopener">阿里云域名解析地址</a>，添加解析：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">记录类型选择CNAME</span><br><span class="line">主机记录填blog            //当然填写www也可以，自拟一个吧</span><br><span class="line">解析线路选择默认</span><br><span class="line">记录值填yourname.github.io</span><br><span class="line">TTL值为10分钟</span><br><span class="line">再添加一个解析，记录类型A</span><br><span class="line">主机记录填www</span><br><span class="line">解析线路选择默认</span><br><span class="line">记录值填你GitHub 的ip地址（在cmd中ping：）</span><br><span class="line">ping suhuashan.github.io</span><br></pre></td></tr></table></figure></p>
-<p>保存，等待一下访问suhuashan.github.io，域名会重定向为blog.suhuashan.xin</p>
-<p>注意：CNAME文件在下次 hexo deploy的时候就消失了，需要重新创建，这样就很繁琐</p>
-<p>方法一：每次 hexo d 之后，就去 GitHub 仓库根目录新建 CNAME文件</p>
-<p>方法二：在 hexo g 之后， hexo d 之前，把CNAME文件复制到 “\public\” 目录下面，里面写入你要绑定的域名。</p>
-<p>方法三（推荐）：将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等，这样在 hexo d 之后就不会被删除了。</p>
-<h2 id="二-Hexo的Next主题详细配置"><a href="#二-Hexo的Next主题详细配置" class="headerlink" title="二.Hexo的Next主题详细配置"></a>二.Hexo的Next主题详细配置</h2><p>这一块我就不多说了，毕竟网上已经有很完美的教程。但是我会提出教程几个讲的比较模糊的地方，然后对不清晰的地方重新配置。</p>
-<p>Next 官方文档：<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a><br>教程参考(我对网上大部分进行筛选，个人觉得以下这两个比较管用)：<br><a href="https://www.jianshu.com/p/3a05351a37dc" target="_blank" rel="noopener">https://www.jianshu.com/p/3a05351a37dc</a><br><a href="https://zhuanlan.zhihu.com/p/28128674" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/28128674</a></p>
-<p>教程里面需要修改的地方：</p>
-<h3 id="1-添加分类模块"><a href="#1-添加分类模块" class="headerlink" title="1.添加分类模块"></a>1.添加分类模块</h3><p>新建一个分类页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure></p>
-<p>这时候，source文件夹下有了categorcies/index.md，最关键就是要设置type<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2018-09-20 23:27:47 //按照自己的时间就可以了</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></span><br></pre></td></tr></table></figure></p>
-<p>打开 主题配置文件 找到menu，将categorcies取消注释</p>
-<p>以后写博客直接在文章的 title 下面加上 categorcies 就可以了，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 分类测试文章标题</span><br><span class="line">categorcies: 测试         //一个类别的情况</span><br><span class="line">categorcies: [测试, 验证] //多个类别的情况写成数组</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-添加标签模块"><a href="#2-添加标签模块" class="headerlink" title="2.添加标签模块"></a>2.添加标签模块</h3><p>新建一个标签页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure></p>
-<p>这时候，source文件夹下有了tags/index.md，最关键就是要设置type<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2018-09-20 23:27:47 //按照自己的时间就可以了</span><br><span class="line"><span class="built_in">type</span>: <span class="string">"tags"</span></span><br></pre></td></tr></table></figure></p>
-<p>打开 主题配置文件 找到menu，将tags取消注释</p>
-<p>以后写博客直接在文章的 title 下面加上 tags 就可以了，例如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 标签测试文章标题</span><br><span class="line">tags: 测试                //一个类别的情况</span><br><span class="line">tags: [测试, 验证]         //多个类别的情况写成数组</span><br></pre></td></tr></table></figure></p>
-<p>其他配置就按照教程就可以了！</p>
+        <p>博主博客地址: <a href="https://blog.suhuashan.xin" target="_blank" rel="noopener">https://blog.suhuashan.xin</a><br>本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。</p>
+<h3 id="一、模块化开发"><a href="#一、模块化开发" class="headerlink" title="一、模块化开发"></a>一、模块化开发</h3><p>为什么要模块化开发呢？<br>其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。<br>目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。<br>具体可以参考阮一峰老师的文章：<a href="http://es6.ruanyifeng.com/#docs/module-loader" target="_blank" rel="noopener">module-loader</a></p>
+<h3 id="二、CommonJS"><a href="#二、CommonJS" class="headerlink" title="二、CommonJS"></a>二、CommonJS</h3><p>Node.js是commonJS规范的主要实践者，它有四个重要的环境变量为模块化的实现提供支持：<em>module</em>、<em>exports</em>、<em>require</em>、<em>global</em>。实际使用时，用module.exports定义当前模块对外输出的接口（不推荐直接用exports），用require加载模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 定义模块math.js</span><br><span class="line">var basicNum = 0;</span><br><span class="line">function add(a, b) &#123;</span><br><span class="line">  return a + b;</span><br><span class="line">&#125;</span><br><span class="line">module.exports = &#123; //在这里写上需要向外暴露的函数、变量</span><br><span class="line">  add: add,</span><br><span class="line">  basicNum: basicNum</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 引用自定义的模块时，参数包含路径，可省略.js</span><br><span class="line">var math = require(&apos;./math&apos;);</span><br><span class="line">math.add(2, 5);</span><br><span class="line"></span><br><span class="line">// 引用核心模块时，不需要带路径</span><br><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">http.createService(...).listen(3000);</span><br></pre></td></tr></table></figure>
+<p>commonJS用同步的方式加载模块。在服务端，模块文件都存在本地磁盘，读取非常快，所以这样做不会有问题。但是在浏览器端，限于网络原因，更合理的方案是使用异步加载。</p>
+<h3 id="三、AMD和require-js"><a href="#三、AMD和require-js" class="headerlink" title="三、AMD和require.js"></a>三、AMD和require.js</h3><p>AMD规范采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。这里介绍用require.js实现AMD规范的模块化：用require.config()指定引用路径等，用define()定义模块，用require()加载模块。<br>这里创建一个目录，目录下有这些文件：</p>
+<ul>
+<li>index.html</li>
+<li>require.js</li>
+<li>main.js</li>
+<li>eat.js</li>
+<li><p>num.js</p>
+<p>最重要的是引入require.js文件和一个入口文件main.js。<br>1.首先我们需要引入Index.html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;模块化规范&lt;/title&gt;</span><br><span class="line">	&lt;!-- AMD模块规范 requireJS--&gt;	</span><br><span class="line">	&lt;!-- 指定一个main文件--&gt;	</span><br><span class="line">	&lt;!-- 解决多js文件引入先后执行顺序问题--&gt;	</span><br><span class="line"> 	&lt;script type=&quot;text/javascript&quot; src=&quot;require.js&quot; data-main=&quot;main.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;	</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.将<a href="https://github.com/requirejs/requirejs/blob/master/require.js" target="_blank" rel="noopener">require.js</a>下载到本地<br>3.eat.js  num.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//eat.js</span><br><span class="line">define(function() &#123;</span><br><span class="line">	function eat() &#123;</span><br><span class="line">		alert(&quot;我正在吃饭&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	return &#123;</span><br><span class="line">		eat: eat</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">define(function() &#123;</span><br><span class="line">	function add(a,c) &#123;</span><br><span class="line">		return a + c;</span><br><span class="line">	&#125;</span><br><span class="line">	function sub(a,c) &#123;</span><br><span class="line">		return a - c;</span><br><span class="line">	&#125;</span><br><span class="line">	return &#123;</span><br><span class="line">		add: add,</span><br><span class="line">		sub: sub</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>4.main.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">require([&quot;./num.js&quot;,&quot;./eat.js&quot;],function(num_operator,eat_module) &#123;</span><br><span class="line">	alert(num_operator.add(1,2));</span><br><span class="line">	alert(num_operator.sub(2,1));</span><br><span class="line">	eat_module.eat();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>require([文件名，，，]，function(“模块1”,”模块2”,….));</p>
+<h3 id="四、CMD和sea-js"><a href="#四、CMD和sea-js" class="headerlink" title="四、CMD和sea.js"></a>四、CMD和sea.js</h3><p>require.js在申明依赖的模块时会在第一之间加载并执行模块内的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">require([&quot;./num.js&quot;,&quot;./eat.js&quot;],function(num_operator,eat_module) &#123;</span><br><span class="line">    // 等于在最前面声明并初始化了要用到的所有模块</span><br><span class="line">	if(false)&#123;</span><br><span class="line">			// 即便没用到某个模块 eat_module，但 eat_module还是提前执行了</span><br><span class="line">			eat_module.eat();</span><br><span class="line">	&#125;</span><br><span class="line">	alert(num_operator.add(1,2));</span><br><span class="line">	alert(num_operator.sub(2,1));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>CMD是另一种js模块化方案，它与AMD很类似，不同点在于：AMD 推崇依赖前置、提前执行，CMD推崇依赖就近、延迟执行。此规范其实是在sea.js推广过程中产生的。<br>这里创建一个目录，目录下有这些文件：</p>
+<ul>
+<li>index.html</li>
+<li>sea.js</li>
+<li>main.js</li>
+<li><p>num.js</p>
+<p>最重要的是引入sea.js文件和一个入口文件main.js。<br>1.首先我们需要引入Index.html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;CMD规范 seajs&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot; src=&quot;sea.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">		seajs.use(&quot;main.js&quot;)</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.将<a href="https://github.com/seajs/seajs/blob/master/dist/sea.js" target="_blank" rel="noopener">sea.js</a>下载到本地<br>3.num.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">define(function(require,exports,module) &#123;</span><br><span class="line">	function add(a,c) &#123;</span><br><span class="line">		return a + c;</span><br><span class="line">	&#125;</span><br><span class="line">	exports.add = add;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>4.main.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">let num = 10;</span><br><span class="line">console.log(10);</span><br><span class="line"></span><br><span class="line">//sea cmd模块</span><br><span class="line">define(function(require,exports,module) &#123;</span><br><span class="line">	//同步</span><br><span class="line">	// let obj = require(&quot;num.js&quot;);</span><br><span class="line">	// alert(obj.add(1,2));</span><br><span class="line"></span><br><span class="line">	//异步</span><br><span class="line">	require.async(&quot;./num.js&quot;,function() &#123;</span><br><span class="line">		console.log(&quot;异步操作&quot;);</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="四、ES6-Module"><a href="#四、ES6-Module" class="headerlink" title="四、ES6 Module"></a>四、ES6 Module</h3><p>ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，旨在成为浏览器和服务器通用的模块解决方案。其模块功能主要由两个命令构成：export和import。export命令用于规定模块的对外接口，import命令用于输入其他模块提供的功能。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/** 定义模块 math.js **/</span><br><span class="line">var basicNum = 0;</span><br><span class="line">var add = function (a, b) &#123;</span><br><span class="line">    return a + b;</span><br><span class="line">&#125;;</span><br><span class="line">export &#123; basicNum, add &#125;;</span><br><span class="line"></span><br><span class="line">/** 引用模块 **/</span><br><span class="line">import &#123; basicNum, add &#125; from &apos;./math&apos;;</span><br><span class="line">function test(ele) &#123;</span><br><span class="line">    ele.textContent = add(99 + basicNum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//a.js</span><br><span class="line">export let sum = ((x,y) =&gt; &#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;);</span><br><span class="line">export let minus= ((x,y) =&gt; &#123;</span><br><span class="line">    return x - y;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">//b.js</span><br><span class="line">//第一种引用方法：</span><br><span class="line">import &#123;sum,minus&#125; from &apos;./a.js&apos;;</span><br><span class="line">console.log(`sum:$&#123;sum(1,3)&#125;`);  //4</span><br><span class="line">console.log(`minus:$&#123;minus(10,2)&#125;`) //8</span><br><span class="line">//第二种引用方法：</span><br><span class="line">import * as util from &apos;./a.js&apos;;</span><br><span class="line">console.log(`util.sum:$&#123;util.sum(1,3)&#125;`);  //4</span><br><span class="line">console.log(`util.minus:$&#123;util.minus(1,3)&#125;`); //8</span><br></pre></td></tr></table></figure>
+<p>如上例所示，使用import命令的时候，用户需要知道所要加载的变量名或函数名。其实ES6还提供了export default命令，为模块指定默认输出，对应的import语句不需要使用大括号。这也更趋近于AMD的引用写法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/** export default **/</span><br><span class="line">//定义输出</span><br><span class="line">export default &#123; basicNum, add &#125;;</span><br><span class="line">//引入</span><br><span class="line">import math from &apos;./math&apos;;</span><br><span class="line">function test(ele) &#123;</span><br><span class="line">    ele.textContent = math.add(99 + math.basicNum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ES6的模块不是对象，import命令会被 JavaScript 引擎静态分析，在编译时就引入模块代码，而不是在代码运行时加载，所以无法实现条件加载。也正因为这个，使得静态分析成为可能。</p>
+<h3 id="五、-ES6-模块与-CommonJS-模块的差异"><a href="#五、-ES6-模块与-CommonJS-模块的差异" class="headerlink" title="五、 ES6 模块与 CommonJS 模块的差异"></a>五、 ES6 模块与 CommonJS 模块的差异</h3><h5 id="1-CommonJS-模块输出的是一个值的拷贝，ES6-模块输出的是值的引用。"><a href="#1-CommonJS-模块输出的是一个值的拷贝，ES6-模块输出的是值的引用。" class="headerlink" title="1. CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。"></a>1. CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。</h5><ul>
+<li>CommonJS 模块输出的是值的拷贝，也就是说，一旦输出一个值，模块内部的变化就影响不到这个值。</li>
+<li>ES6 模块的运行机制与 CommonJS 不一样。JS 引擎对脚本静态分析的时候，遇到模块加载命令import，就会生成一个只读引用。等到脚本真正执行时，再根据这个只读引用，到被加载的那个模块里面去取值。换句话说，ES6 的import有点像 Unix 系统的“符号连接”，原始值变了，import加载的值也会跟着变。因此，ES6 模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块。</li>
+</ul>
+<h5 id="2-CommonJS-模块是运行时加载，ES6-模块是编译时输出接口。"><a href="#2-CommonJS-模块是运行时加载，ES6-模块是编译时输出接口。" class="headerlink" title="2.CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。"></a>2.CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。</h5><ul>
+<li>运行时加载: CommonJS 模块就是对象；即在输入时是先加载整个模块，生成一个对象，然后再从这个对象上面读取方法，这种加载称为“运行时加载”。</li>
+<li><p>编译时加载: ES6 模块不是对象，而是通过 export 命令显式指定输出的代码，import时采用静态命令的形式。即在import时可以指定加载某个输出值，而不是加载整个模块，这种加载称为“编译时加载”。</p>
+<p>CommonJS 加载的是一个对象（即module.exports属性），该对象只有在脚本运行完才会生成。而 ES6 模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。</p>
+</li>
+</ul>
+<p>本篇文章是结合网上一部分文章和自己的理解所写的。<br>参考文章具体如下：<br><a href="http://es6.ruanyifeng.com/#docs/module-loader" target="_blank" rel="noopener">http://es6.ruanyifeng.com/#docs/module-loader</a><br><a href="https://blog.csdn.net/weixin_40811829/article/details/85311128" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40811829/article/details/85311128</a><br><a href="https://juejin.im/post/5aaa37c8f265da23945f365c" target="_blank" rel="noopener">https://juejin.im/post/5aaa37c8f265da23945f365c</a></p>
 
       
     </div>
@@ -519,7 +500,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+            <a href="/tags/模块化/" rel="tag"><i class="fa fa-tag"></i> 模块化</a>
+          
+            <a href="/tags/CommonJS/" rel="tag"><i class="fa fa-tag"></i> CommonJS</a>
+          
+            <a href="/tags/AMD/" rel="tag"><i class="fa fa-tag"></i> AMD</a>
+          
+            <a href="/tags/CMD/" rel="tag"><i class="fa fa-tag"></i> CMD</a>
           
         </div>
       
@@ -532,15 +519,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/08/vue项目下，用命令直接修复ESLint报错/" rel="next" title="vue项目下，用命令直接修复ESLint报错">
+                <i class="fa fa-chevron-left"></i> vue项目下，用命令直接修复ESLint报错
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/07/Git常用指令详细说明/" rel="prev" title="Git常用指令详细说明">
-                Git常用指令详细说明 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -699,7 +686,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-博客搭建"><span class="nav-text">一.博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-搭建-Node-js-环境"><span class="nav-text">1.搭建 Node.js 环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-搭建-Git-环境"><span class="nav-text">2.搭建 Git 环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-GitHub-注册和配置"><span class="nav-text">3.GitHub 注册和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-安装配置-Hexo"><span class="nav-text">4.安装配置 Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-关联-Hexo-与-GitHub-Pages"><span class="nav-text">5.关联 Hexo 与 GitHub Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-发表新文章"><span class="nav-text">6.发表新文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-GitHub-Pages-地址解析到个人域名"><span class="nav-text">7.GitHub Pages 地址解析到个人域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-Hexo的Next主题详细配置"><span class="nav-text">二.Hexo的Next主题详细配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-添加分类模块"><span class="nav-text">1.添加分类模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-添加标签模块"><span class="nav-text">2.添加标签模块</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、模块化开发"><span class="nav-text">一、模块化开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、CommonJS"><span class="nav-text">二、CommonJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、AMD和require-js"><span class="nav-text">三、AMD和require.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、CMD和sea-js"><span class="nav-text">四、CMD和sea.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、ES6-Module"><span class="nav-text">四、ES6 Module</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、-ES6-模块与-CommonJS-模块的差异"><span class="nav-text">五、 ES6 模块与 CommonJS 模块的差异</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-CommonJS-模块输出的是一个值的拷贝，ES6-模块输出的是值的引用。"><span class="nav-text">1. CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-CommonJS-模块是运行时加载，ES6-模块是编译时输出接口。"><span class="nav-text">2.CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

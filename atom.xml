@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-08T14:15:41.499Z</updated>
+  <updated>2019-01-03T15:17:19.491Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端模块化：CommonJS,AMD,CMD,ES6</title>
+    <link href="http://yoursite.com/2019/01/03/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%EF%BC%9ACommonJS-AMD-CMD-ES6/"/>
+    <id>http://yoursite.com/2019/01/03/前端模块化：CommonJS-AMD-CMD-ES6/</id>
+    <published>2019-01-03T15:12:07.000Z</published>
+    <updated>2019-01-03T15:17:19.491Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;博主博客地址: &lt;a href=&quot;https://blog.suhuashan.xin&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端模块化" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
+    
+    
+      <category term="模块化" scheme="http://yoursite.com/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/"/>
+    
+      <category term="CommonJS" scheme="http://yoursite.com/tags/CommonJS/"/>
+    
+      <category term="AMD" scheme="http://yoursite.com/tags/AMD/"/>
+    
+      <category term="CMD" scheme="http://yoursite.com/tags/CMD/"/>
+    
+  </entry>
   
   <entry>
     <title>vue项目下，用命令直接修复ESLint报错</title>
