@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-03T15:17:19.491Z</updated>
+  <updated>2019-01-03T15:23:09.033Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ES6实用教程</title>
+    <link href="http://yoursite.com/2019/01/03/ES6%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2019/01/03/ES6实用教程/</id>
+    <published>2019-01-03T15:20:34.000Z</published>
+    <updated>2019-01-03T15:23:09.033Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;博主博客地址: &lt;a href=&quot;https://blog.suhuashan.xin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.suhuashan.xin&lt;/a&gt;&lt;br&gt;本文讲解ES6实用教程，主要列举很多常用的ES6语法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ES6" scheme="http://yoursite.com/categories/ES6/"/>
+    
+    
+      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端模块化：CommonJS,AMD,CMD,ES6</title>
     <link href="http://yoursite.com/2019/01/03/%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8C%96%EF%BC%9ACommonJS-AMD-CMD-ES6/"/>
     <id>http://yoursite.com/2019/01/03/前端模块化：CommonJS-AMD-CMD-ES6/</id>
     <published>2019-01-03T15:12:07.000Z</published>
-    <updated>2019-01-03T15:17:19.491Z</updated>
+    <updated>2019-01-03T15:20:10.274Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;博主博客地址: &lt;a href=&quot;https://blog.suhuashan.xin&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;博主博客地址: &lt;a href=&quot;https://blog.suhuashan.xin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.suhuashan.xin&lt;/a&gt;&lt;br&gt;本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。&lt;/p&gt;
     
     </summary>
     

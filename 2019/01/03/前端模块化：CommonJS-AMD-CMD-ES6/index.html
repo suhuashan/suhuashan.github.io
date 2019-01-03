@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。 一、模块化开发为什么要模块化开发呢？其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。具体可以参考阮一峰老师的文章：module-loader 二、Comm">
+<meta name="description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。">
 <meta name="keywords" content="模块化,CommonJS,AMD,CMD">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端模块化：CommonJS,AMD,CMD,ES6">
 <meta property="og:url" content="http://yoursite.com/2019/01/03/前端模块化：CommonJS-AMD-CMD-ES6/index.html">
 <meta property="og:site_name" content="Mount华">
-<meta property="og:description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。 一、模块化开发为什么要模块化开发呢？其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。具体可以参考阮一峰老师的文章：module-loader 二、Comm">
+<meta property="og:description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-03T15:17:19.491Z">
+<meta property="og:updated_time" content="2019-01-03T15:20:10.274Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端模块化：CommonJS,AMD,CMD,ES6">
-<meta name="twitter:description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。 一、模块化开发为什么要模块化开发呢？其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。具体可以参考阮一峰老师的文章：module-loader 二、Comm">
+<meta name="twitter:description" content="博主博客地址: https://blog.suhuashan.xin本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。">
 
 
 
@@ -425,6 +425,7 @@
 
       
         <p>博主博客地址: <a href="https://blog.suhuashan.xin" target="_blank" rel="noopener">https://blog.suhuashan.xin</a><br>本文主要讲解前端模块化，其中包括CommonJS,AMD,CMD,ES6模块化。</p>
+<a id="more"></a>
 <h3 id="一、模块化开发"><a href="#一、模块化开发" class="headerlink" title="一、模块化开发"></a>一、模块化开发</h3><p>为什么要模块化开发呢？<br>其一，解决模块中函数名重复的问题；其二，解决模块之间的依赖关系。<br>目前流行的js模块化规范有CommonJS、AMD、CMD以及ES6的模块系统。<br>具体可以参考阮一峰老师的文章：<a href="http://es6.ruanyifeng.com/#docs/module-loader" target="_blank" rel="noopener">module-loader</a></p>
 <h3 id="二、CommonJS"><a href="#二、CommonJS" class="headerlink" title="二、CommonJS"></a>二、CommonJS</h3><p>Node.js是commonJS规范的主要实践者，它有四个重要的环境变量为模块化的实现提供支持：<em>module</em>、<em>exports</em>、<em>require</em>、<em>global</em>。实际使用时，用module.exports定义当前模块对外输出的接口（不推荐直接用exports），用require加载模块。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 定义模块math.js</span><br><span class="line">var basicNum = 0;</span><br><span class="line">function add(a, b) &#123;</span><br><span class="line">  return a + b;</span><br><span class="line">&#125;</span><br><span class="line">module.exports = &#123; //在这里写上需要向外暴露的函数、变量</span><br><span class="line">  add: add,</span><br><span class="line">  basicNum: basicNum</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 引用自定义的模块时，参数包含路径，可省略.js</span><br><span class="line">var math = require(&apos;./math&apos;);</span><br><span class="line">math.add(2, 5);</span><br><span class="line"></span><br><span class="line">// 引用核心模块时，不需要带路径</span><br><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">http.createService(...).listen(3000);</span><br></pre></td></tr></table></figure>
@@ -529,6 +530,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/01/03/ES6实用教程/" rel="prev" title="ES6实用教程">
+                ES6实用教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -608,7 +613,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -619,7 +624,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -630,7 +635,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -742,7 +747,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.7k字</span>
+  <span class="post-count">博客全站共11.7k字</span>
 </div>
         
 
